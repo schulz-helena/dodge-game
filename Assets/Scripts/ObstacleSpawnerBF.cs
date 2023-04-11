@@ -5,8 +5,14 @@ using UnityEngine;
 public class ObstacleSpawnerBF : MonoBehaviour
 {
     public GameObject[] obstacles;
+    public float spawnRate;
 
     void Start()
+    {
+        InvokeRepeating("SpawnRandom", 0, spawnRate);
+    }
+
+    void SpawnRandom()
     {
         int obstacleIndex = Random.Range(0, 3);
         int index;
