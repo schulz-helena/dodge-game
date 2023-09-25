@@ -29,6 +29,7 @@ public class ObstacleSpawnerLR : MonoBehaviour
         }
         int bias = positionBiases[index];
         Vector3 obstaclePosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + bias);
-        Instantiate(obstacles[obstacleIndex], obstaclePosition, transform.rotation);
+        GameObject instantiatedObject = Instantiate(obstacles[obstacleIndex], obstaclePosition, transform.rotation);
+        instantiatedObject.GetComponent<Obstacle>().spawner = gameObject;
     }
 }

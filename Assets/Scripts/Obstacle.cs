@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public float destroyTime;
+    //public float destroyTime;
+    public GameObject spawner;
     void Start()
     {
         ObstacleManager.instance.obstacles.Add(this);
-        Destroy(gameObject, destroyTime);
+        //Destroy(gameObject, destroyTime);
     }
 
     void OnDestroy()

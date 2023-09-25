@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a054a6a3bf424911909f37fdb298b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &1295306475224826276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,4 +174,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 281a94d1a3c2542cb9848044ebee972f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 10
+  destroyTime: 6.5
+  spawner: {fileID: 0}
